@@ -1,1 +1,43 @@
+■Cコンパイラ
+コンパイラ(compiler)とは、プログラミング言語で書かれたプログラムを、
+コンピュータが直接実行できる形式のプログラムに変換するソフトウェアのこと。
+C言語はコンパイラ言語でC言語で書かれたソースコードはコンパイルしなければ、プログラムを実行することはできない。
+
+■変数
+処理を行うために必要なデータを記憶しておく領域に名前をつけたものを意味する
+変数を使用するためには変数の宣言をする必要がある
+[例]変数の型　変数名;
+
+<C言語での基本的な変数の型>
+|   型   |        意味       |
+----------------------------
+|  char  |        文字       |
+|  int   |        整数       |
+|  float |浮動小数点数(単精度)|
+| double |浮動小数点数(倍精度)|
+
+<命名規則>
+1.アルファベット（A〜Z，a〜z）、数字（0〜9）、アンダーバー（_）のみ。すべて半角で、全角は不可。
+2.第1文字目は必ずアルファベットまたはアンダーバー。数字で始まる変数名は不可。
+3.大文字と小文字は別の文字として扱われる。例えば、linenumberとlineNumberは別の変数となる。
+4.if、else、intなどの予約語は使用できない。
+
+<C言語予約語一覧>
+auto	double	int	struct
+break	else	long	switch
+case	enum	register	typedef
+char	extern	return	union
+const	float	short	unsigned
+continue	for	signed	void
+default	goto	sizeof	volatile
+do	if	static	while
+
+
+
+
+
+
+
+
+
 
