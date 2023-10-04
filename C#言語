@@ -49,9 +49,9 @@ Console.WriteLine　→メソッド(メンバ関数)
   Ken
 
 string newName →文字列型のnewNameを宣言
-newName = "RYU" →まだ空のnewNameに"RYU"を代入する
+newName = "Ryu" →まだ空のnewNameに"RYU"を代入する
 Console.WriteLine(newName) →()内を画面に出力
-newName = "Ken" →すでに"RYU"が入っている変数に"RYU"に上書きする
+newName = "Ken" →すでに"Ryu"が入っている変数に"Ken"に上書きする
 Console.WriteLine(newName) →()内を画面に出力
 
 
