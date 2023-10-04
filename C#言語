@@ -54,6 +54,32 @@ Console.WriteLine(newName) →()内を画面に出力
 newName = "Ken" →すでに"Ryu"が入っている変数に"Ken"に上書きする
 Console.WriteLine(newName) →()内を画面に出力
 
+■データ型
+変数を宣言する際の型について
+
+int x = 1;
+Console.WriteLine(x);      //整数型
+decimal y = 1.23m;
+Console.WriteLine(y);      //浮動小数点型
+char c = 'a';
+Console.WriteLine(c);      //文字型
+string s = "aiueo"; 
+Console.WriteLine(s);      //文字列型
+bool is_ok = true;
+Console.WriteLine(is_ok);  //論理型
+
+出力
+1
+1.23
+a
+aiueo
+True
+
+
+
+
+
+
 
 
 
