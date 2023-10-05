@@ -128,6 +128,7 @@ world !!!
 Console.WriteLine(@" ¥t¥n¥¥ ");　　　　→@が付いているので改行、タブが使用できず文字そのままが出力される
 
 ■文字列連結
+文字列や変数を連結させる
 
 string firstName = "Ai";
 string message = "Good morning";
