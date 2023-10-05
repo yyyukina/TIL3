@@ -127,6 +127,33 @@ world !!!
 #########");　　　　　　　　　　　　　　→""の前に@をつけることで入力した文字をそのまま出力
 Console.WriteLine(@" ¥t¥n¥¥ ");　　　　→@が付いているので改行、タブが使用できず文字そのままが出力される
 
+■文字列連結
+
+string firstName = "Ai";
+string message = "Good morning";
+
+Console.WriteLine(message +" "+ firstName);　　//+で結合
+Console.WriteLine($"{message} {firstName}");　 //$"{} {}"で結合
+
+string URL = $@"c:\dir\{firstName}\data.txt";
+Console.WriteLine(URL);
+
+出力
+Good morning Ai
+Good morning Ai
+c:\dir\Ai\data.txt
+
+[解説]　
+Console.WriteLine(message +" "+ firstName);　→+で文字列連結(基本的な連結方法)
+Console.WriteLine($"{message} {firstName}");　→$"{} {}"で文字列連結、{}の中に変数を入れる
+string URL = $@"c:\dir\{firstName}\data.txt";　→@がついていることでそのまま出力される、この時、${}の中身は変数の値が出力される
+
+
+
+
+
+
+
 
 
 
