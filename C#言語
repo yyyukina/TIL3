@@ -29,6 +29,7 @@ clsaa Program                          // C#はclass内で実行される
   }WriteLine
 }
 
+[解説]
 Console　→クラス(メソッドを所有)
 WriteLine　→一行で書き込み
 .　→メンバアクセス演算子
@@ -48,6 +49,7 @@ Console.WriteLine　→メソッド(メンバ関数)
 　Ryu
   Ken
 
+[解説]
 string newName →文字列型のnewNameを宣言
 newName = "Ryu" →まだ空のnewNameに"RYU"を代入する
 Console.WriteLine(newName) →()内を画面に出力
@@ -74,6 +76,19 @@ Console.WriteLine(is_ok);  //論理型
 a
 aiueo
 True
+
+[解説]
+int x = 1; →int型にx(変数)を定義し変数に1(整数)を代入
+Console.WriteLine(x);　→xの中身を出力
+decimal y = 1.23m;　→decimal型、小数点以下を出力、後にmをつける
+Console.WriteLine(y);
+char c = 'a';　→char型、文字型(一文字)、’’で囲む
+Console.WriteLine(c);　
+string s = "aiueo"; 　→string型、文字列、""で囲む
+Console.WriteLine(s);
+bool is_ok = true;　→bool型、論理型、true・falseで返す
+Console.WriteLine(is_ok);
+
 
 
 
