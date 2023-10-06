@@ -29,5 +29,32 @@ Console.writeLine(x + y + " is answer");　→x+yは計算されて文字列と�
 
 ■浮動小数点
 
+int x = 10;
+int y = 3;
+decimal d =1.5m;                 //小数m
+
+Console.WriteLine(x + d);
+Console.WriteLine(x - d);
+Console.WriteLine(x * d);
+Console.WriteLine(x / d);       //式に小数を含むと結果が小数表示になる
+
+Console.WriteLine((decimal)x / (decimal)y);
+
+double d2 = 2.5;
+Console.WriteLine((float)d2);
+
+出力
+11.5
+8.5
+15.0
+6.666666666666666666666666667
+3.333333333333333333333333333
+2.5
+
+解説
+
+double d2 = 2.5;　→double型(16ビット)
+Console.WriteLine((float)d2);　→float型(8ビット)
+
 ■演算子+α
 
