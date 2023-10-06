@@ -58,3 +58,50 @@ Console.WriteLine((float)d2);　→float型(8ビット)
 
 ■演算子+α
 
+int x = 10;
+Console.WriteLine(x);
+x += 10;                //x = x + 10;
+Console.WriteLine(x);
+x -= 10;                ///x = x - 10;
+Console.WriteLine(x);
+x *= 10;                ///x = x * 10;
+Console.WriteLine(x);
+x /- 10;                ///x = x / 10;
+Console.WriteLine(x);
+
+Console.WriteLine(x++); 
+Console.WriteLine(x++);
+Console.WriteLine(x);
+Console.WriteLine(++x);
+Console.WriteLine(++x);
+
+出力
+10
+20
+10
+100
+10
+10
+11
+12
+13
+14
+
+解説
+x += 10;　→xに対して同じ数字を足し続ける場合に+=を使用(+-*/すべて同じ)
+Console.WriteLine(x++);　→xに対して1を足すが、出力すると足す前が出力される(表示後に足す)
+Console.WriteLine(x++);　→ここで１足される
+Console.WriteLine(x);　→ここでまた1足される
+Console.WriteLine(++x);　→1を足した後にxが表示される(表示前に足す)
+Console.WriteLine(++x);　→足した後の数字が表示されている
+
+※X（を出力した後）＋＋（足す）、＋＋（足した後に）X（を出力）
+
+
+
+
+
+
+
+
+
