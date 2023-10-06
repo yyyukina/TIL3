@@ -1,6 +1,33 @@
 C#入門
 
 ■演算子
+
+int x = 10;
+int y =3;
+Console.writeLine(x + y);                //足す
+Console.writeLine(x - y);　　　　　　　　 //引く
+Console.writeLine(x * y);                //掛ける
+Console.writeLine(x / y);　　　　　　　　 //割る
+Console.writeLine(x % y);　　　　　　　　 //割った余り
+
+Console.writeLine(x + " is answer");　　　　
+Console.writeLine(x + y + " is answer");
+
+出力
+13
+7
+30
+3
+1
+10 is answer
+13 is answer
+
+解説
+Console.writeLine(x + " is answer");　→整数と文字列を結合
+Console.writeLine(x + y + " is answer");　→x+yは計算されて文字列と結合される
+
+
 ■浮動小数点
+
 ■演算子+α
 
