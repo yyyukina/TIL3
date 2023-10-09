@@ -1,4 +1,48 @@
 ■ライブラリ
+C#プログラミング言語で開発されたアプリケーションで使用できる再利用可能なコードや機能のコレクション
+特定のタスクや機能を実行するためのコードをカプセル化し、C#プログラムに組み込むことができます。
+C#ライブラリは、開発者がアプリケーションを効率的かつ効果的に構築するために使用されます。
+
+※.NETライブラリのSystem.Randomクラスを使用
+
+Random dice = new Random();
+int roll = dice.Next(1, 7);
+Console.WriteLine(roll);
+
+roll = dice.Next(1, 7);
+Console.WriteLine(roll);
+roll = dice.Next(1, 7);
+Console.WriteLine(roll);
+roll = dice.Next(1, 7);
+Console.WriteLine(roll);
+roll = dice.Next(1, 7);
+Console.WriteLine(roll);
+
+出力
+3
+1
+4
+5
+3
+
+解説
+Random dice = new Random();　→インスタンス生成、diceという変数にオブジェクトの参照を格納
+int roll = dice.Next(1, 7)　→diceオブジェクトのNext()メソッドを呼び出す
+(1, 7)　→1～6までの乱数を出す
+Console.WriteLine(roll);　→ConsoleクラスのWriteLine()メソッドで出力
+
+ライブラリとはマイクロソフトが用意した標準のコードや機能のコレクション。
+これを使うことによって自分の好きな機能をもってくることができる。
+元のライブラリは基本的に編集しないため、dice変数を定義しRandomクラスから新しい(new)コピーを生成する。
+コピーにメソッドが使えるようになり、dice.Nextをrollに与えてConsole.WriteLine(roll)でrollを出力する
+
+
+
+
+
+
+
+
 ■続ライブラリ
 ■オーバーロード
 
