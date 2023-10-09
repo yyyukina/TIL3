@@ -49,4 +49,38 @@ int roll = dice.Next(1, 7);　→何を参照？RandomメソッドのNextクラ�
 
 
 ■オーバーロード
+①引数に様々なデータ型が使える int,string ...②引数の数を選べる
+同じ名前のメソッドや演算子を複数のバージョンで定義するプログラミング概念です。
+オーバーロードを使用すると、同じ名前のメソッドや演算子を異なるパラメータや引数の型で呼び出すことができます。
+C#では、オーバーロードをサポートすることで、コードの可読性を向上させ、同じ名前の操作を行うために異なるデータ型を使用できるようになります。
+
+[引き数]
+関数やメソッドに渡すデータや情報のことを指します。
+関数やメソッドは、特定のタスクを実行するために引数を使用し、引数に渡された情報に基づいて処理を行います。
+[戻り値]
+メソッドから戻ってきた値を格納している。
+引数を与えて戻り値が返ってくる。
+
+int x = 1;
+Console.WriteLine(x);
+Console.WriteLine("Good morning!!¥n");
+
+Random rand = new Random();
+int rand1 = rand.Next();
+int rand2 = rand.Next(100);
+int rand3 = rand.Next(90,100);
+Console.WriteLine(rand1);
+Console.WriteLine(rand2);
+Console.WriteLine(rand3);
+
+出力
+1
+Good morning!!
+
+1800793455
+21
+98
+
+
+
 
