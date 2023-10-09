@@ -36,13 +36,17 @@ Console.WriteLine(roll);　→ConsoleクラスのWriteLine()メソッドで出�
 元のライブラリは基本的に編集しないため、dice変数を定義しRandomクラスから新しい(new)コピーを生成する。
 コピーにメソッドが使えるようになり、dice.Nextをrollに与えてConsole.WriteLine(roll)でrollを出力する
 
-
-
-
-
-
-
-
 ■続ライブラリ
+
+[ステートレスメソッド]
+既にメモリに入っている値を参照しない
+Console.WriteLine("Good morning!!"); →この一行で完結する、呼べばすぐに使える
+
+[ステートフルメソッド(インスタンスメソッド)]
+メモリ内に入った値を参照し、更新する
+Random dice = new Random();　→diceクラスのインスタンス、newメモリ確保、オブジェクト生成　
+int roll = dice.Next(1, 7);　→何を参照？RandomメソッドのNextクラスは時刻に基づいて乱数を生成している
+
+
 ■オーバーロード
 
