@@ -66,10 +66,10 @@ Console.WriteLine(x);
 Console.WriteLine("Good morning!!¥n");
 
 Random rand = new Random();
-int rand1 = rand.Next();
-int rand2 = rand.Next(100);
-int rand3 = rand.Next(90,100);
-Console.WriteLine(rand1);
+int rand1 = rand.Next();          //()0以上のランダムな整数を返す
+int rand2 = rand.Next(100);　　 　 //(100)指定した最大値より小さい0以上のランダムな整数を返す
+int rand3 = rand.Next(90,100);     //(90,100)指定した範囲内のランダムな整数を返す(90～99まで)
+Console.WriteLine(rand1);　　　　　
 Console.WriteLine(rand2);
 Console.WriteLine(rand3);
 
@@ -80,6 +80,7 @@ Good morning!!
 1800793455
 21
 98
+
 
 
 
