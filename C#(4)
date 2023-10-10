@@ -70,7 +70,7 @@ Console.WriteLine(fluts.Length);　→配列に要素がいくつ入っている
 foreach文を使うことで、要素を順番に取り出し、コレクション全体を簡単に反復処理できます。
 
 
-string[] fluits = { "apple","oremge","pine" };
+string[] fluits = { "apple","orange","pine" };
 
 foreach(string fluit in fluits)
 {
@@ -82,5 +82,31 @@ for (int i=0; i < fluits.Length; i++)
 {
    Console.WriteLine(fluits[i]);
 }
+
+出力
+apple
+orange
+pine
+
+apple
+orange
+pine
+
+解説
+string[] fluits = { "apple","orange","pine" };　→配列宣言
+foreach(string fluit in fluits)　→配列の中身を順番に出力したい時に使用するのがforeach
+                                 →(string fluit in fluits)fluit新しく宣言された変数
+　　　　　　　　　　　　　　　　　→(string fluit in fluits)fluitがfluits内を一つずつ進んでいく
+Console.WriteLine(fluit);　→foreach配列内の要素をすべて取得するまで繰り返される
+
+for　→forは条件付きで配列内の要素を取得する
+int i=0;　→iという新しい変数の中に0をいれる
+i < fluits.Length; 　→iがfluits.Length(配列の要素数)になるまで
+i++　→1ずつ進める
+
+
+
+
+
 
 
