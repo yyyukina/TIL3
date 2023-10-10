@@ -1,3 +1,27 @@
-■if文
+■if文(分岐)
+var dice = Random();
+int roll =dice.Next(1,7);
+Console.WriteLine(roll);
+
+if (roll >= 5)    //if(bool型){ ~ }bool型：TsueもしくはFalse x>y,x,=y,x==y,X!=y
+{
+   Console.WriteLine("Very higt !!");   //if(True){ 実行される }
+}
+else if(roll >=3)
+{
+  Console.WriteLine("So good");    //if(False){ 実行されない }　else{ 実行される }
+}
+else
+{
+  Console.WriteLine("Bad...");
+}
+
+解説
+if (roll >= 5)　{} →True,Falseで返すのがbool型、diceの出目が5以上の場合Trueで返し{}の中身の"Very higt !!"が実行される
+else if(roll >=3) {} →ifでない場合else ifを実行しTrueの場合{}の中身の"So good"を実行
+else　→else ifでもない場合elseを実行しTrueの場合{}の中身の"Bad..."を実行
+
+  
+
 ■配列
 ■for each文
