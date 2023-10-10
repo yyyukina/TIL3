@@ -28,6 +28,39 @@ else if(roll >=3) →　else if(roll ==3 || roll == 4)この書き方でも同�
 || :OR演算子
 && :AND演算子
 
-
 ■配列
+string[] items = new string[3];    //配列宣言　items[0],items[1],items[2]
+
+items[0] = "A123";
+items[1] = "B456";
+items[2] = "C789";
+
+Console.WriteLine(items[0]);
+Console.WriteLine(items[1]);
+Console.WriteLine(items[2]);
+
+string[] fluits ={"apple","orenge","pine" };  //配列初期化
+Console.WriteLine(fluits[1]);
+Console.WriteLine(fluts.Length);　//(fluts.Length)配列の長さを出力するメソッド
+
+出力
+A123
+B456
+C789
+orenge
+3
+
+解説
+string[] items = new string[3];　→string[]データ型の宣言の後に[]をつけ items 変数を定義
+                                 →new新しく配列を作り　string[3]3つの要素が入った
+                                 →new string[3]をitemsに代入している
+　　　　　　　　　　　　　　　　　 →string[] items = new string[3];　配列の宣言では中身はまだ何も入っていない状態
+items[0] = "A123";　
+items[1] = "B456";
+items[2] = "C789";　　　　　　　　→中身を格納
+
+string[] fluits ={"apple","orenge","pine" };　→要素を{}に入れて中身を指定することも可能
+Console.WriteLine(fluits[1]);　→２つ目の要素　※配列は0から始まる
+Console.WriteLine(fluts.Length);　→配列に要素がいくつ入っているか
+
 ■for each文
