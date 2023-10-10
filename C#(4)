@@ -17,6 +17,7 @@ else
 }
 
 解説
+var　→変数の型を暗黙的に推論するためのキーワードです。変数の型を明示的に宣言する必要がなくなり、コードをより簡潔にすることができます。
 if (roll >= 5)　{} →True,Falseで返すのがbool型、diceの出目が5以上の場合Trueで返し{}の中身の"Very higt !!"が実行される
 else if(roll >=3) {} →ifでない場合else ifを実行し、diceの中身が3以上の場合Trueで返し{}の中身の"So good"を実行
 else　→else ifでもない場合elseを実行しTrueの場合{}の中身の"Bad..."を実行
