@@ -26,3 +26,37 @@ for (int i = 0; i < NUM; i++)
 const int NUM = 5; →NUMに5を代入、constで定義している為代入不可
 int[] array = new int[NUM];　→int型としてNUM(5)個分の数値の配列を作る
 for (int i = 0; i < NUM; i++)　→for文で5個分の値を取り出しConsole.WriteLine(array[i])で出力
+
+■型推論
+右辺から型を推定
+
+var x = 10;       //varは右辺から型を推定
+var y = 10.5m;
+　
+Console.WriteLine(x.GetTypeCode());　　　//GetTypeCode型を返すメソッド
+Console.WriteLine(y.GetTypeCOde());
+
+Console.WriteLine();
+
+var rand = new Random();
+int roll = rand.Next(1, 7);
+Console.WriteLine(roll);
+
+出力
+Int32
+Decimal
+
+5
+
+解説
+Console.WriteLine(x.GetTypeCode());　→xの型を出力
+Console.WriteLine(y.GetTypeCOde());　→yの型を出力
+
+var rand = new Random();　→本来はRandom rand =なので不要な繰り返しを避けれる
+int roll = rand.Next(1, 7);　→randのクラスのNextメソッドにアクセス
+
+※型推論は変数にも、クラスを呼び出す(インスタンス生成)時にも使える
+
+■メソッド
+
+
