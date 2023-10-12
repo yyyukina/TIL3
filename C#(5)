@@ -59,6 +59,46 @@ int roll = rand.Next(1, 7);　→randのクラスのNextメソッドにアクセ
 クラスを生成した時にどんな型で返ってくるか推測できない時にvarで受け取る事ができる
 
 ■メソッド
+メソッドはクラス内で定義された関数で、特定のタスクや操作を実行します。
+クラスのメソッドは、インスタンスによって呼び出され、そのメソッドが実行されたときにインスタンスのデータを操作できます。
+
+※メソッドの作り方
+選択して、右クリック、 [クイック アクションとリファクタリング] メニューを選択、[メソッドを抽出する]
+
+
+var x = 10;
+int y;
+
+y = x * x;
+
+Console.WriteLine(y);
+Console.WriteLine(y);
+Console.WriteLine(y);
+
+↓
+
+var x = 10;
+int y;
+
+y = メソッド名(x);
+
+Console.WriteLine(y);
+Console.WriteLine(y);
+Console.WriteLine(y);
+
+private static int メソッド名(int x)
+{
+   return x * x;
+}
+
+自作メソッド
+◌作業をまとめられる
+◌使いまわし可能
+×流れが見にくい
+
+
+
+
 
 
 
